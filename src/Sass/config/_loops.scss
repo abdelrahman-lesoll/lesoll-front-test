@@ -1,0 +1,29 @@
+@for $i from -200 to 200 {
+  .font-#{$i} {
+    font-size: $i * 1px;
+  }
+  .width-#{$i} {
+    width: $i * 1%;
+  }
+  .height-#{$i} {
+    height: $i * 1%;
+  }
+  .top-#{$i} {
+    top: $i * 1%;
+  }
+  .bottom-#{$i} {
+    bottom: $i * 1%;
+  }
+  .right-#{$i} {
+    right: $i * 1%;
+  }
+  .left-#{$i} {
+    left: $i * 1%;
+  }
+}
+
+@for $i from 0 to 30 {
+  .border-radius-#{$i} {
+    border-radius: $i * 1px;
+  }
+}

@@ -1,0 +1,10 @@
+@media (max-width: 580px) {
+  .appointment-container {
+    .user-options {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;   
+    }
+  }
+}

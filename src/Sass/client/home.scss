@@ -1,0 +1,99 @@
+@use "../config/variables" as *;
+
+main {
+  > section {
+    height: calc(100vh - 50px);
+    .img-container {
+      z-index: -1;
+    }
+    z-index: 3;
+    
+    @media (max-width: 768px) {
+      .advanced-home-search {
+        width: 100% !important;
+        left: 0 !important;
+      }
+    }
+    // Lesoll is the best way to home 
+    .home-description.en {
+      font-family: 'lesoll-font', sans-serif;
+    }
+    @media (max-width: 780px) {
+      .home-description {
+        font-size: 40px !important;
+       
+      }
+    }
+    @media (max-width: 700px) {
+      .home-description {
+        font-size: 35px !important;
+        & + div img.ar {
+          height: 80px !important;
+          width: 80px !important;
+        }
+        & + div img.ar:nth-child(2) {
+          margin: 0 1.5rem !important;
+        }
+      }
+    }
+    @media (max-width: 500px) {
+      .home-description.en {
+        font-size: 30px !important;
+        & + div img {
+          height: 78px !important;
+          width: 78px !important;
+        }
+        & + div img:nth-child(2) {
+          margin: 0 1rem !important;
+        }
+      }
+    }
+    @media (max-width: 340px) {
+      .home-description.en {
+        font-size: 22px !important;
+        & + div img {
+          height: 65px !important;
+          width: 65px !important;
+        }
+        
+      }
+    }
+    // search section 
+    @media (max-width: 991px) {
+      .custom-check-box {
+        border: none !important;
+      }
+      .home-search {
+        button {
+          width: 100% !important;
+          margin: 0 !important;
+        }
+        .custom-search {
+          flex-wrap: wrap;
+          > div {
+            padding-bottom: 0.5rem !important;
+          }
+          input {
+            width: 100% !important;
+          }
+        }
+        .col-lg-5.col-12 {
+          border-bottom: 1px solid #dee2e6 !important;
+        }
+      }
+    }
+    @media (max-width: 343px) {
+      .for-sale-search {
+        margin: 0 !important;
+      }
+    }
+  }
+  .find-by-location {
+    .img-container {
+      overflow: hidden;
+      img:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}

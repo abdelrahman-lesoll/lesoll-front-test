@@ -1,0 +1,19 @@
+@use '../config/variables' as * ;
+
+.gallery-multi-option {
+  position: relative;
+  ul {
+    opacity: 0;
+    background-color: $light-grey;
+    position: absolute;
+    padding: 10px;
+    top: 100%;
+    min-width: 100px;
+    max-width: 150px;
+    white-space: nowrap;
+  }
+  &:hover ul {
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+  }
+}

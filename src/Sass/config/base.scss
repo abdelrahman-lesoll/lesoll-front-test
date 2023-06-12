@@ -1,0 +1,249 @@
+@use "./variables" as *;
+
+body {
+  &.ar {
+    .btn-close,
+    .accordion-button::after {
+      position: absolute;
+      left: 2%;
+    }
+    .pac-item,
+    .pac-item-query {
+      text-align: right;
+    }
+  }
+  font-family: 'avenir', sans-serif;
+  overflow-x: hidden !important;
+}
+
+
+.main-bg,
+.main-bg-hover:hover {
+  background-color: $blue-color !important;
+}
+
+.bg-light-grey,
+.bg-light-grey-hover:hover {
+  background-color: $light-grey !important;
+}
+
+.bg-dark-grey,
+.bg-dark-grey-hover:hover {
+  background-color: rgba($color: $dark-grey, $alpha: 0.90) !important;
+}
+
+.bg-orange,
+.bg-orange-hover:hover {
+  background-color: $orange-color !important;
+}
+
+.text-white-hover:hover {
+  color: white !important;
+}
+
+.bg-white-hover:hover {
+  background-color: white !important;
+}
+
+.text-dark-grey {
+  color: $dark-grey !important;
+}
+
+.main-text,
+.main-text-hover:hover {
+  color: $blue-color !important;
+}
+
+.text-light-blue {
+  color: $light-blue-color !important;
+}
+
+.bg-light-blue,
+.bg-light-blue-hover:hover {
+  background-color: $light-blue-color !important;
+}
+
+.text-icon,
+.text-icon-hover:hover {
+  color: $icon-color !important;
+}
+
+.bg-icon,
+.bg-icon-hover:hover {
+  background-color: $icon-color !important;
+}
+
+.text-orange,
+.text-orange-hover:hover {
+  color: $orange-color !important;
+}
+
+.border-blue {
+  border-color: $blue-color !important;
+}
+
+.border-light-blue {
+  border-color: $light-blue-color !important;
+}
+
+.border-orange {
+  border-color: $orange-color !important;
+}
+
+.border-icon {
+  border-color: $icon-color !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.cursor-move {
+  cursor: move;
+}
+
+.outline-0 {
+  outline: none;
+}
+
+.box-shadow {
+  box-shadow: 0px 10px 40px rgb(0 0 0 / 20%);
+}
+
+.custom-transition {
+  transition: $main-transition;
+}
+
+.z-index-999 {
+  z-index: 999 !important;
+}
+
+a {
+  text-decoration: none;
+
+  &,
+  &:hover {
+    color: inherit !important;
+  }
+}
+
+// hide arrow from input[type="number"]
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.cursor-not-allowed {
+  cursor: not-allowed !important;
+}
+
+.form-select {
+  padding: 0.375rem 1rem 0.375rem 1rem;
+
+  &.en {
+    background-position: right 0.75rem center !important;
+  }
+
+  &.ar {
+    background-position: left 0.75rem center !important;
+  }
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: $light-grey !important;
+  color: $blue-color !important;
+  box-shadow: none !important;
+
+  &::after {
+    background-image: var(--bs-accordion-btn-icon);
+  }
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+
+.form-check-input {
+  &:checked {
+    background-color: $blue-color !important;
+    border-color: $blue-color !important;
+  }
+}
+
+.form-select,
+.form-select:focus,
+.form-check-input:focus {
+  border-color: #dee2e6 !important;
+  box-shadow: none;
+}
+
+table {
+  * {
+    vertical-align: middle;
+
+    & span {
+      min-width: 150px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  &+div button:disabled {
+    cursor: not-allowed !important;
+  }
+}
+
+.nav-tabs {
+  padding: 0 !important;
+}
+
+.text-justify {
+  text-align: justify !important;
+}
+
+// for google map style !
+.pac-item,
+.pac-item-query {
+ color: $dark-grey;
+ width: inherit;
+ &:hover {
+  background: $light-grey;
+ }
+}
+
+.pac-container {
+  box-shadow: none !important;
+  border: 1px solid #dee2e6 !important;
+  border-radius: 5px;
+  z-index: 9999999 !important;
+}
+
+div#map {
+  width: 100% !important;
+  height: 300px !important;
+}
+
+.pagination {
+  .page-item.active span.page-link {
+    background-color: $blue-color !important;
+    border-color: $blue-color !important;
+  }
+}
+
+.text-decoration-underline-hover:hover {
+  text-decoration: underline !important;
+}
+
+.gm-style-iw.gm-style-iw-c{
+  padding: 0 !important;
+}
+.gm-style-iw-d {
+  overflow: hidden !important;
+}

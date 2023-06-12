@@ -1,0 +1,16 @@
+@use "../config/variables" as *;
+
+@media (max-width: 400px) {
+  .show-map-responsive-button {
+    width: 50% !important;
+  }
+}
+
+.price-input-search {
+  direction: ltr !important;
+  @media (max-width: 576px) {
+    input {
+      width: 100% !important;
+    }
+  }
+}

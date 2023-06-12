@@ -1,0 +1,41 @@
+@use "../config/variables" as *;
+
+header {
+  .drop-down-parent {
+    position: relative;
+    transition: $main-transition;
+    span:nth-of-type(1) {
+      min-width: 90px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 110%;
+      left: 15%;
+      width: 20px;
+      height: 20px;
+      transform: rotate(45deg);
+      background-color: white;
+      z-index: -1;
+      display: none;
+    }
+    .lang-drop-down {
+      white-space: nowrap;
+      opacity: 0;
+      left: -2px;
+      width: 100%;
+      z-index: -1;
+    }
+    ul.lang-drop-down{
+      min-width: 200px;
+    }
+    &:hover .lang-drop-down {
+      opacity: 1;
+      z-index: 999;
+    }
+    &:hover::after {
+      z-index: 9999;
+      display: block !important;
+    }
+  }
+}

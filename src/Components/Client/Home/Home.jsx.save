@@ -1,0 +1,21 @@
+location.href} />
+        <meta
+          name="description"
+          content={intl.formatMessage({ id: "HelmetHomeDescription" })}
+        />
+      </Helmet>
+      <main>
+        {/* <section className="text-center position-relative d-flex flex-column my-5"> */}
+        <section className="text-center position-relative d-flex flex-column">
+          <HomeImgs />
+          <HomeSearch />
+        </section>
+        <HomeOptions />
+        <GoodPlaces />
+        <MostView />
+      </main>
+    </>
+  );
+};
+
+export default Home;

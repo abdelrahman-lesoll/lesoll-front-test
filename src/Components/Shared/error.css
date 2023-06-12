@@ -1,0 +1,9 @@
+.err-img {
+    width :600px
+}
+
+@media (max-width: 780px){
+    .err-img{
+        width: 350px;
+    }
+}

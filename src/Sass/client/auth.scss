@@ -1,0 +1,16 @@
+.auth-shared-container {
+  .face-auth,
+  .google-auth {
+    font-family: 'avenir', sans-serif
+  }
+
+  .face-auth {
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .reset-password-container > div {
+    width: 100% !important;
+  }
+}

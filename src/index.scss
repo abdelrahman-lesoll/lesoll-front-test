@@ -1,0 +1,29 @@
+@use "./Sass/config/loops" as *;
+@use "./Sass/config/base.scss";
+
+// Client
+@use "./Sass/client/auth.scss";
+@use "./Sass/client/appointment.scss";
+@use "./Sass/client/header.scss";
+@use "./Sass/client/home.scss";
+@use "./Sass/client/realty.scss";
+@use "./Sass/client/search.scss";
+@use "./Sass/client/detail.scss";
+@use "./Sass/client/q_a.scss";
+@use "./Sass/client/bread-crumb.scss";
+@use "./Sass/client/footer.scss";
+
+// Admin
+@use "./Sass/admin/dashboard.scss";
+@use "./Sass/admin/notifications.scss";
+
+@font-face {
+  font-family: "avenir";
+  src: url("./Fonts/AvenirArabic-Heavy.otf") format("truetype");
+}
+
+// logo-font 
+@font-face {
+  font-family: "lesoll-font";
+  src: url("./Fonts/JosefinSans-Regular.ttf") format("truetype");
+}

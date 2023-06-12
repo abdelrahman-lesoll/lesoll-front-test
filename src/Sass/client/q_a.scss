@@ -1,0 +1,25 @@
+@use '../config/variables' as *;
+
+.faq-questions {
+  .accordion-button:not(.collapsed) {
+    background-color: $icon-color !important;
+    color: white !important;
+  }
+  .nav-link {
+    color: $icon-color !important;
+  }
+  .nav-link.active, .nav-link:hover {
+    background-color: $icon-color !important;
+    color: white !important;
+  }
+  @media (min-width: 545px) {
+    .row.btn-faq {
+      display: none !important;
+    }
+  }
+  @media (max-width: 545px) {
+    .nav.nav-tabs {
+      display: none !important;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.bg-bread-crumb {
+  background: radial-gradient(circle, rgba(27, 110, 109, 1) 31%, rgba(48, 157, 160, 1) 82%);
+
+  &>* {
+    padding: 90px 0;
+  }
+
+  @media (max-width: 620px) {
+    h1 {
+      font-size: 65px !important;
+    }
+  }
+
+  @media (max-width: 420px) {
+    h1 {
+      font-size: 50px !important;
+    }
+  }
+}

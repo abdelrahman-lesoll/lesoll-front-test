@@ -1,0 +1,103 @@
+@use "../config/variables" as *;
+
+.admin-dashboard {
+  .grid-container {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .customDatePickerWidth,
+  .customDatePickerWidth > div.react-datepicker-wrapper,
+  .customDatePickerWidth
+    > div
+    > div.react-datepicker__input-container
+    .customDatePickerWidth
+    > div
+    > div.react-datepicker__input-container
+    input {
+    width: 100%;
+  }
+
+  .react-datepicker__input-container {
+    width: inherit;
+  }
+
+  .react-datepicker__input-container input {
+    width: inherit;
+  }
+
+  .react-datepicker-wrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-dashboard {
+    padding: 2rem !important;
+
+    .grid-container {
+      grid-template-columns: repeat(1, 1fr);
+
+      > div:nth-child(1) {
+        order: 1;
+      }
+
+      > div:nth-child(2) {
+        order: 2;
+      }
+
+      > div:nth-child(3) {
+        order: 3;
+      }
+
+      > div:nth-child(4) {
+        order: 9;
+      }
+
+      > div:nth-child(5) {
+        order: 4;
+      }
+
+      > div:nth-child(6) {
+        order: 11;
+      }
+
+      > div:nth-child(7) {
+        order: 5;
+      }
+
+      > div:nth-child(8) {
+        order: 12;
+      }
+
+      > div:nth-child(9) {
+        order: 6;
+      }
+
+      > div:nth-child(10) {
+        order: 10;
+      }
+
+      > div:nth-child(11) {
+        order: 7;
+      }
+
+      > div:nth-child(12) {
+        order: 13;
+      }
+      > div:nth-child(13) {
+        order: 8;
+      }
+    }
+  }
+}
+
+@media (max-width: 490px) {
+  .admin-dashboard {
+    h5 {
+      font-size: 3.5vw;
+    }
+  }
+}
